@@ -103,7 +103,7 @@ graph_{{id}} = function(){
     // Returns an event handler for fading a given chord group.
     function fade(opacity) {
       return function(g, i) {
-        svg.selectAll(".chord path")
+        svg_{{id}}.selectAll(".chord path")
             .filter(function(d) { return d.source.index != i && d.target.index != i; })
           .transition()
             .style("opacity", opacity);
