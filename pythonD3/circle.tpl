@@ -1,3 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 <style>
 
 .overlay {
@@ -30,7 +31,7 @@ svg_{{id}}.append("rect")
 
     draw = function(nodes, svg){
 
-    var x_scale = d3.scale.linear()
+     var x_scale = d3.scale.linear()
                     .domain([d3.min(nodes, function(d){ return d['x'];}), 
                              d3.max(nodes, function(d){ return d['x'];})])
                     .range([0, width]);
@@ -88,6 +89,7 @@ if ( typeof(d3) !== "undefined" ){
   console.log('trying d3 with require');
   require.config({paths: {d3: "{{ d3_url[:-3] }}"}});
       console.log('trying {{ d3_url[:-3] }}');
+        
       require(["d3"], function(d3){
         window.d3 = d3;
         console.log('loaded d3 with require');
@@ -99,4 +101,3 @@ if ( typeof(d3) !== "undefined" ){
 }
 
 </script>
-

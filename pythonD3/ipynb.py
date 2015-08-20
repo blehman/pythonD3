@@ -16,7 +16,7 @@ def write_ipynb_local_js(location=None, d3_src=None):
     else:
         nbextension = True
 
-    d3_src = os.path.join(os.path.dirname(__file__), 'd3/d3.min.js')
+    d3_src = os.path.join(os.path.dirname(__file__), 'd3.v3.min.js')
 
     d3js = os.path.basename(d3_src)
 
@@ -38,4 +38,3 @@ def write_ipynb_local_js(location=None, d3_src=None):
             install_nbextension(d3_src, user=True)
 
 write_ipynb_local_js()
-

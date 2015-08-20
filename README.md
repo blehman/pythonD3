@@ -1,6 +1,6 @@
 # IPython & D3
 (HUGE thanks to [Monte Lunacek](https://twitter.com/MonteLunacek) for
-teaching me his hack with the custom d3 module!)  
+teaching me his hack with the custom D3 module!)  
 <br>
 Let's start with reviewing a few of the ideas for using JavaScript in IPython. We'll then work with some data in python and then build a few d3 visualizations. We'll conclude by crafting a custom module that can receive data and render the d3 viz! 
 
