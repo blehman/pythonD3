@@ -34,7 +34,7 @@ graph_{{id}} = function(){
 
     var width = 960,
         height = 500,
-        innerRadius = Math.min(width, height) * .41,
+        innerRadius = Math.min(width, height) * .25,
         outerRadius = innerRadius * 1.1;
 
     var fill = d3.scale.ordinal()
